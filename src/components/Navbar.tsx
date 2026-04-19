@@ -1,12 +1,17 @@
-function Navbar() {
+import { Link } from "react-router-dom";
 
+function Navbar() {
   return (
-    <>
-      <div className='flex justify-center content-center items-center h-screen'>
-        <h1 className="text-4xl font-bold text-blue-500"> Welcome to Vite </h1>
+    <nav className="bg-blue-600 text-white p-4 flex justify-between">
+      <Link to="/index" className="font-bold">EasyDrive</Link>
+
+      <div className="flex gap-6">
+        <Link to="/servicios">Servicios</Link>
+        <Link to="/nosotros">Nosotros</Link>
+        <Link to="/contacto">Contacto</Link>
       </div>
-    </>
-  )
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
