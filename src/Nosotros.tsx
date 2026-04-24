@@ -3,23 +3,31 @@ function Nosotros() {
     <div className="min-h-screen bg-gray-100">
 
       {/* Header */}
-      <header className="bg-blue-600 text-white p-5 text-center">
-        <h1 className="text-3xl font-bold">EasyDrive</h1>
-        <p className="text-sm">Sobre Nosotros</p>
+      <header className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-6 text-center shadow-md">
+        <h1 className="text-4xl font-extrabold tracking-wide">EasyDrive</h1>
+        <p className="text-sm md:text-base mt-2 opacity-90">
+          Innovación y seguridad en cada trayecto
+        </p>
       </header>
 
       {/* About */}
-      <section className="p-10 grid md:grid-cols-2 gap-8 items-center bg-white">
-        
+      <section className="p-10 grid md:grid-cols-2 gap-10 items-center bg-white">
+
         {/* Texto */}
         <div>
-          <h2 className="text-4xl font-bold mb-4">Quiénes Somos</h2>
-          <p className="text-gray-600 text-lg">
+          <h2 className="text-4xl font-bold mb-5 text-gray-800">
+            Quiénes Somos
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
             EasyDrive es un proyecto tecnológico enfocado en la prevención de
             accidentes mediante el uso de IoT. Desarrollamos soluciones que
             permiten monitorear en tiempo real el estado del conductor y del
             vehículo, ayudando a tomar decisiones antes de que ocurra un riesgo.
           </p>
+
+          <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-md transition duration-300 cursor-pointer">
+            Conocer más
+          </button>
         </div>
 
         {/* Imagen */}
@@ -27,28 +35,30 @@ function Nosotros() {
           <img
             src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
             alt="IoT Vehicular"
-            className="rounded-2xl shadow-lg"
+            className="rounded-2xl shadow-xl hover:scale-105 transition duration-500"
           />
         </div>
 
       </section>
 
       {/* Tecnología */}
-      <section className="p-10 grid md:grid-cols-2 gap-8 items-center">
-        
+      <section className="p-10 grid md:grid-cols-2 gap-10 items-center">
+
         {/* Imagen */}
         <div>
           <img
             src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
             alt="Sensores y datos"
-            className="rounded-2xl shadow-lg"
+            className="rounded-2xl shadow-xl hover:scale-105 transition duration-500"
           />
         </div>
 
         {/* Texto */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Nuestra Tecnología</h2>
-          <p className="text-gray-600 text-lg">
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">
+            Nuestra Tecnología
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
             Nuestro sistema se basa en un prototipo con sensores que detectan
             condiciones críticas como fatiga, consumo de alcohol o movimientos
             bruscos. Estos datos se envían a una aplicación donde pueden ser
@@ -60,8 +70,10 @@ function Nosotros() {
 
       {/* Misión */}
       <section className="p-10 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Nuestra Misión</h2>
-        <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+        <h2 className="text-3xl font-bold mb-5 text-gray-800">
+          Nuestra Misión
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
           Reducir los accidentes de tránsito mediante el uso de tecnología
           inteligente, brindando herramientas tanto a empresas como a conductores
           independientes para monitorear, analizar y mejorar la seguridad en cada
@@ -71,23 +83,27 @@ function Nosotros() {
 
       {/* A quién ayudamos */}
       <section className="p-10">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
           ¿A quién ayudamos?
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2">
 
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-bold mb-2">Empresas con flotillas</h3>
-            <p className="text-gray-600">
+          <div className="bg-white p-7 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition duration-300 border-l-4 border-blue-500">
+            <h3 className="text-xl font-bold mb-3 text-gray-800">
+              Empresas con flotillas
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
               Monitorea a tus conductores en tiempo real, reduce riesgos y toma
               decisiones basadas en datos para mejorar la seguridad y eficiencia.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-bold mb-2">Conductores independientes</h3>
-            <p className="text-gray-600">
+          <div className="bg-white p-7 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition duration-300 border-l-4 border-blue-500">
+            <h3 className="text-xl font-bold mb-3 text-gray-800">
+              Conductores independientes
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
               Analiza tu comportamiento al volante, recibe alertas y mejora tus
               hábitos de conducción para evitar accidentes.
             </p>
@@ -96,9 +112,43 @@ function Nosotros() {
         </div>
       </section>
 
+      {/* Valores */}
+      <section className="p-10 bg-white">
+        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+          Nuestros Valores
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6 text-center">
+
+          <div className="p-6 rounded-2xl shadow-md bg-gray-50">
+            <h3 className="text-xl font-bold mb-2">Innovación</h3>
+            <p className="text-gray-600">
+              Creamos soluciones modernas que transforman la seguridad vial.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl shadow-md bg-gray-50">
+            <h3 className="text-xl font-bold mb-2">Prevención</h3>
+            <p className="text-gray-600">
+              Actuamos antes del problema para evitar accidentes y pérdidas.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl shadow-md bg-gray-50">
+            <h3 className="text-xl font-bold mb-2">Confianza</h3>
+            <p className="text-gray-600">
+              Ofrecemos datos precisos y herramientas seguras para cada usuario.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-gray-800 text-white text-center p-4">
-        <p>© 2026 EasyDrive - Todos los derechos reservados</p>
+      <footer className="bg-gray-800 text-white text-center p-5 mt-6">
+        <p className="text-sm md:text-base">
+          © 2026 EasyDrive - Todos los derechos reservados
+        </p>
       </footer>
 
     </div>
