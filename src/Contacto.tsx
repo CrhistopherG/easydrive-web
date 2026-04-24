@@ -2,9 +2,9 @@ import foto1 from "./images/crhistopher.jpg";
 import foto2 from "./images/juanpa.jpg";
 import foto3 from "./images/isaac.jpg";
 import foto4 from "./images/jesus.jpg";
-function Contacto() {
 
-return (
+function Contacto() {
+  return (
     <div className="min-h-screen bg-gray-100">
 
       {/* Header */}
@@ -22,21 +22,47 @@ return (
         <form className="max-w-3xl mx-auto grid gap-4">
           <input
             type="text"
-            placeholder="Nombre"
+            placeholder="Nombre completo"
             className="p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
 
           <input
             type="email"
             placeholder="Correo electrónico"
             className="p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
+
+          <input
+            type="tel"
+            placeholder="Teléfono"
+            className="p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <select
+            className="p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          >
+            <option value="">Selecciona el motivo</option>
+            <option value="soporte">Soporte técnico</option>
+            <option value="ventas">Ventas</option>
+            <option value="informacion">Información general</option>
+          </select>
 
           <textarea
             placeholder="Escribe tu mensaje..."
             rows={4}
             className="p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           ></textarea>
+
+          <div className="flex items-center gap-2">
+            <input type="checkbox" id="suscripcion" />
+            <label htmlFor="suscripcion" className="text-sm text-gray-600">
+              Deseo recibir noticias y promociones
+            </label>
+          </div>
 
           <button className="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition">
             Enviar mensaje
@@ -44,14 +70,13 @@ return (
         </form>
       </section>
 
-      {/* Integrantes */}
+      {/* Integrantes (se conserva igual con imágenes) */}
       <section className="p-10">
         <h2 className="text-3xl font-bold text-center mb-8">
           Nuestro Equipo
         </h2>
 
         <div className="grid gap-6 md:grid-cols-4">
-
           {/* Integrante 1 */}
           <div className="bg-white p-6 rounded-2xl shadow-md text-center">
             <img
@@ -80,7 +105,7 @@ return (
             />
             <h3 className="font-bold">Juan Pablo Pérez Martín</h3>
             <p className="text-gray-500 text-sm">Backend / Base de Datos</p>
-                       <a
+            <a
               href="https://github.com/JuanPabloPerezMartin"
               target="_blank"
               rel="noopener noreferrer"
@@ -99,7 +124,7 @@ return (
             />
             <h3 className="font-bold">Isaac Adrian Canul Perera</h3>
             <p className="text-gray-500 text-sm">Frontend / App</p>
-           <a
+            <a
               href="https://github.com/IsaacCanul"
               target="_blank"
               rel="noopener noreferrer"
@@ -127,7 +152,6 @@ return (
               https://github.com/Jesusgomez365
             </a>
           </div>
-
         </div>
       </section>
 
@@ -135,9 +159,8 @@ return (
       <footer className="bg-gray-800 text-white text-center p-4">
         <p>© 2026 EasyDrive - Todos los derechos reservados</p>
       </footer>
-
     </div>
   )
 }
 
-export default Contacto
+export default Contacto;
